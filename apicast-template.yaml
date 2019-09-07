@@ -14,7 +14,7 @@ objects:
   metadata:
     name: apicast-config
   stringData:
-    password: https://${ACCESS_TOKEN}@${TENANT}-admin.3scale.net/
+    password: https://${ACCESS_TOKEN}@${TENANT}/
   type: Opaque
 - apiVersion: v1
   kind: DeploymentConfig
