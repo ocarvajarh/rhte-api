@@ -2,41 +2,40 @@
 swagger: "2.0"
 info:
   title: Red Hat Event API
-  description: RHTE API v2.0 - An API that gives information about the Red Hat Event
   version: 2.0.0
+  description: RHTE API v2.0 - An API that gives information about the Red Hat Event
 paths:
   /location:
     get:
+      responses:
+        200:
+          description: OK
+      operationId: GetLocation
       summary: Get Location
       description: Get the location of the next RedHat Event
-      operationId: GetLocation
-      responses:
-        200:
-          description: OK
   /timeframe:
     get:
+      responses:
+        200:
+          description: OK
+      operationId: GetTimeframe
       summary: Get Timeframe
       description: Get the timeframe of the next RedHat Event
-      operationId: GetTimeframe
-      responses:
-        200:
-          description: OK
   /participants:
     get:
-      summary: Get Participants
-      description: Get the participants of the next RedHat Event
-      operationId: GetParticipants
       responses:
         200:
           description: OK
+      operationId: GetParticipants
+      summary: Get Participants
+      description: Get the participants of the next RedHat Event
 securityDefinitions:
   oidc:
-    type: oauth2
-    flow: accessCode
-    authorizationUrl: https://filled-later.dummy/auth
+    flow: application
     tokenUrl: https://filled-later.dummy/token
     scopes:
       openid: Get an OpenID Connect token
+    type: oauth2
 security:
 - oidc:
   - openid
