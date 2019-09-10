@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "0fbd2f8a-f65f-41d1-b745-606d5415d7b8",
-		"name": "RedHat-Event-API-1",
+		"name": "RedHat-Event-API",
 		"description": "version=1.0 - An API that gives information about the next Red Hat Event",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
