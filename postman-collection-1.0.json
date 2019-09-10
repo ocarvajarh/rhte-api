@@ -1,14 +1,13 @@
 {
 	"info": {
-		"_postman_id": "eebbf7c9-f616-4e1e-9128-8f26dec53958",
-		"name": "RedHat-Event-API",
+		"_postman_id": "0fbd2f8a-f65f-41d1-b745-606d5415d7b8",
+		"name": "RedHat-Event-API-1",
 		"description": "version=1.0 - An API that gives information about the next Red Hat Event",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "location",
-			"description": "Folder for location",
 			"item": [
 				{
 					"name": "Get Location",
@@ -30,30 +29,27 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
 						"url": "http://{{hostname}}/location",
 						"description": "Get the location of the next Red Hat Event"
 					},
 					"response": [
 						{
-							"id": "5fd53940-1fda-49cf-a07a-eba6c91f472d",
 							"name": "Get Location",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
 								"url": "http:///location"
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Type",
 									"value": "application/json",
+									"name": "Content-Type",
 									"description": "",
-									"type": "text",
-									"name": "Content-Type"
+									"type": "text"
 								}
 							],
 							"cookie": [],
@@ -61,11 +57,11 @@
 						}
 					]
 				}
-			]
+			],
+			"description": "Folder for location"
 		},
 		{
 			"name": "timeframe",
-			"description": "Folder for timeframe",
 			"item": [
 				{
 					"name": "Get Timeframe",
@@ -88,30 +84,27 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
 						"url": "http://{{hostname}}/timeframe",
 						"description": "Get the timeframe of the next Red Hat Event"
 					},
 					"response": [
 						{
-							"id": "9c01b8c2-5850-4cae-8795-63ac61a83fb6",
 							"name": "Get Timeframe",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
 								"url": "http:///timeframe"
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Type",
 									"value": "application/json",
+									"name": "Content-Type",
 									"description": "",
-									"type": "text",
-									"name": "Content-Type"
+									"type": "text"
 								}
 							],
 							"cookie": [],
@@ -119,8 +112,9 @@
 						}
 					]
 				}
-			]
-		},
+			],
+			"description": "Folder for timeframe"
+		}
 	],
 	"event": [
 		{
