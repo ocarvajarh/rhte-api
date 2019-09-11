@@ -15,19 +15,19 @@ router.get("/location", function(req, res) {
      .end();
 });
 
-/*router.get("/timeframe",function(req, res) {
+router.get("/timeframe",function(req, res) {
   var response = { "From": "19/02/2019", "To": "19/02/2019" };
   res.type('application/json')
      .send(JSON.stringify(response))
      .end();
-});*/
+});
 
-router.get("/participants",function(req, res) {
+/*router.get("/participants",function(req, res) {
   var response = [ "Nicolas", "David" ];
   res.type('application/json')
      .send(JSON.stringify(response))
      .end();
-});
+});*/
 
 app.use("/",router);
 
